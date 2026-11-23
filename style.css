@@ -1,0 +1,177 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f0f2f5;
+    padding: 30px 15px;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #2563eb;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #666;
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.card {
+    padding: 25px;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 4px 12px #0001;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.card h2 {
+    font-size: 27px;
+}
+
+.balance {
+    background: #2563eb;
+}
+
+.income {
+    background: #16a34a;
+}
+
+.expense {
+    background: #dc2626;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.form-section,
+.history {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #0001;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 21px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+button {
+    padding: 13px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+#transaction-list {
+    list-style: none;
+}
+
+#transaction-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.transaction-info {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.transaction-info small {
+    display: block;
+    color: #888;
+    margin-top: 5px;
+}
+
+.positive {
+    color: #16a34a;
+}
+
+.negative {
+    color: #dc2626;
+}
+
+.delete-btn {
+    background: #ef4444;
+    padding: 7px 10px;
+    font-size: 13px;
+}
+
+.delete-btn:hover {
+    background: #b91c1c;
+}
+
+.empty {
+    color: #888;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 700px) {
+    .summary {
+        grid-template-columns: 1fr;
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+}
